@@ -72,15 +72,15 @@ k=4 (4 карты), n=52 (общее число карт в колоде)
 def prob_1():
 
     # probability (a)
-    prob_1a = math.comb(13, 4) / math.comb(52, 4)
+    prob_a = math.comb(13, 4) / math.comb(52, 4)
 
     # probability (b) - 'OR' events
-    prob_1b = (math.comb(4, 1) / math.comb(52, 4)) \
+    prob_b = (math.comb(4, 1) / math.comb(52, 4)) \
             + (math.comb(4, 2) / math.comb(52, 4)) \
             + (math.comb(4, 3) / math.comb(52, 4)) \
             + (math.comb(4, 4) / math.comb(52, 4))
 
-    print(f'task_1a: {prob_1a}\ntask_1a: {prob_1b}')
+    print(f'task_1a: {prob_a}\ntask_1b: {prob_b}')
                  
 prob_1()
 
@@ -89,9 +89,24 @@ prob_1()
 # Код содержит три цифры, которые нужно нажать одновременно. 
 # Какова вероятность того, что человек, не знающий код, откроет дверь с первой попытки?
 
+'''
+P = {event space} / {sample space}
+Применяется формула "combinations", поскольку n<k и порядок не важен.
 
+- {event space}=1 для 1 попытки открыть дверь
 
+- {sample space} для комбинаций из 3 кнопок во всем диапазоне значений
+k=3 (3 кнопки нажатых одновременно), n=10 (общее число кнопок)
+'''
 
+# task 2
+def prob_2():
+
+    # probability
+    prob = 1 / math.comb(10, 3)
+    print(f'task_2:  {prob}')            
+
+prob_2()
 
 
 # 3) В ящике имеется 15 деталей, из которых 9 окрашены. 
@@ -133,7 +148,7 @@ k=2 (число купленных билетов), n=2 (число выйгры
 k=2 (2 билета), n=100 (общее число билетов)
 '''
 
-# task 3
+# task 4
 def prob_4():
 
     # probability
