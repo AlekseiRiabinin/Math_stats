@@ -59,7 +59,6 @@ P3 = 3 / (5 + 5) - вероятность вытащить 3 белых мяча
 
 P = P12 * P3 - вероятность вытащить 3 белых мяча при условии что из первого ящика 
 вытаскивают случайным образом два мяча, из второго - 4 мяча.
-
 '''
 
 # task 2
@@ -96,7 +95,7 @@ P1 = 0.9
 P2 = 0.8
 P3 = 0.6
 
-P123 = P1 + P2 + P3 - вероятность попадания или 1 или 2 или 3 спортсмена
+P123 = P1 + P2 + P3 - вероятность попадания 1 или 2 или 3 спортсмена
 (т.к один из трех стреляет)
 
 P1_shoot = P1 * P123 - вероятность выстрела 1 спортсмена при условии что попал один из 3-x 
@@ -122,7 +121,7 @@ def prob_3():
 
     # print out results
     print('task_3:')
-    print(f'1st athlet: {P1_shoot}\n2nd athlet: {P2_shoot}\n3rd athlet: {P3_shoot}\n')
+    print(f'(a): {P1_shoot}\n(b): {P2_shoot}\n(c): {P3_shoot}\n')
 
 prob_3()
 
@@ -177,10 +176,10 @@ def prob_4():
     pass_b = x_B * p_B
     pass_c = x_C * p_C
 
-    # probability that a student studies at school
-    prob_a = x_A / E
-    prob_b = x_B / E
-    prob_c = x_C / E
+    # probability that a student studies at the school
+    prob_a = pass_a / E
+    prob_b = pass_b / E
+    prob_c = pass_c / E
 
     # print out results
     print('task_4:')
