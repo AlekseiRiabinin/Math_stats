@@ -64,7 +64,7 @@ def stats_2():
     
     # function outputs p-value and z-score corresponding to that value, p-value is compared with alpha;
     # if it is greater than alpha then null hypothesis is not rejected else rejected.
-    if(p_value < alpha):
+    if (p_value < alpha):
         print('Reject Null Hypothesis\n')
     else:
         print('Fail to Reject Null Hypothesis\n')
@@ -106,7 +106,7 @@ def stats_3():
     
     # function outputs p-value which is compared with alpha;
     # if it is greater than alpha then null hypothesis is not rejected else rejected.
-    if(p_value < alpha):
+    if (p_value < alpha):
         print('Reject Null Hypothesis\n')
     else:
         print('Fail to Reject Null Hypothesis\n')
@@ -135,7 +135,7 @@ def stats_4():
 
     # H0 => µ1 = µ2 (population mean of arr1 is equal to arr2)
     # HA => µ1 ≠ µ2 (population mean of arr1 is different from arr2)
-    if(anal_results[1] < alpha):
+    if (anal_results[1] < alpha):
         print('Reject Null Hypothesis\n')
     else:
         print('Fail to Reject Null Hypothesis\n')
